@@ -41,10 +41,7 @@ class FullProfileViewController: UIViewController {
         let image = screenShotMethod()
         
         // TODO: Create a `UIActivityViewController`, pass it `image` in an array and present it.
-        let imageShare = [image]
-        let activityViewController = UIActivityViewController(activityItems: imageShare , applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = self.view
-        self.present(activityViewController, animated: true, completion: nil)
+        
     }
     
 }

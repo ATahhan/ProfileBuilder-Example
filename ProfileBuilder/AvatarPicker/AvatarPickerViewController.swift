@@ -45,10 +45,7 @@ class AvatarPickerViewController: UIViewController {
             let nextViewController = segue.destination as! GenderViewController
             
             // TODO: Add newly `selectedImage` to `user` and pass it to `nextViewController`
-            user?.image = selectedImage.image
             
-            // Send user via segua to next ViewController
-            nextViewController.user = user
             
         }
     }

@@ -145,9 +145,6 @@
                                     <constraint firstAttribute="height" constant="30" id="OeJ-f4-Rkm"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="Th1-ei-pQC" kind="show" identifier="Gender" id="1hd-ah-npt"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="002-girl-2" translatesAutoresizingMaskIntoConstraints="NO" id="ilI-5y-rVN">
                                 <rect key="frame" x="137.5" y="80" width="100" height="100"/>
@@ -303,7 +300,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I'm an iOS Developer" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Hi-eH-m8m">
-                                <rect key="frame" x="16" y="112" width="343" height="437"/>
+                                <rect key="frame" x="16" y="68" width="343" height="481"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

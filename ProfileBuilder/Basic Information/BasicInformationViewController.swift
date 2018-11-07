@@ -45,16 +45,7 @@ class BasicInformationViewController: UIViewController {
             isValidateEmail(email: tfEmail.text!) {
             
             // TODO: Create a UserProfile object, assign its properties and pass it to AvatarPickerViewController.UserProfile
-            let nextViewController = segue.destination as! AvatarPickerViewController
-
-            // Creating user to send it with next ViewController
-            var user = UserProfile()
-            user.firstName = tfFirstName.text!
-            user.lastName = tfLastName.text!
-            user.email = tfEmail.text!
-
-            // Send user via segua to next ViewController
-            nextViewController.user = user
+            
 
         } else {
             let alert = UIAlertController(title: "Error", message: "Fill required data", preferredStyle: UIAlertControllerStyle.alert)
