@@ -44,7 +44,7 @@ class BasicInformationViewController: UIViewController {
             isValidateName(name: tfLastName.text!) &&
             isValidateEmail(email: tfEmail.text!) {
             
-            // TODO: Create a UserProfile object, assign its properties and pass it to AvatarPickerViewController.UserProfile
+            // TODO: Create a UserProfile object, assign its properties and pass it to AvatarPickerViewController
             
 
         } else {
