@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jEp-Zh-2F6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jEp-Zh-2F6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -381,6 +381,19 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbh-WN-WUe">
+                                        <rect key="frame" x="16" y="523" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.39607843139999999" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Do2-2F-CrA"/>
+                                        </constraints>
+                                        <state key="normal" title="Share">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressShare:" destination="oJ1-mP-amW" eventType="touchUpInside" id="XIE-lI-7rS"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -391,11 +404,13 @@
                                     <constraint firstAttribute="bottom" secondItem="RjG-50-fbv" secondAttribute="bottom" constant="8" id="Mxc-Cj-IV6"/>
                                     <constraint firstItem="RjG-50-fbv" firstAttribute="top" secondItem="2CF-4o-wkq" secondAttribute="bottom" constant="8" id="NGV-WD-5do"/>
                                     <constraint firstItem="K3y-vf-rCO" firstAttribute="leading" secondItem="2CF-4o-wkq" secondAttribute="trailing" constant="8" id="RHw-zz-AIg"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lbh-WN-WUe" secondAttribute="trailing" constant="16" id="cqZ-OS-1Vm"/>
                                     <constraint firstItem="VIS-UN-Ubm" firstAttribute="top" secondItem="i7f-0I-S5r" secondAttribute="top" constant="42" id="i6N-ft-Qzp"/>
                                     <constraint firstItem="RjG-50-fbv" firstAttribute="leading" secondItem="i7f-0I-S5r" secondAttribute="leading" constant="8" id="oEl-rQ-RU6"/>
                                     <constraint firstItem="2CF-4o-wkq" firstAttribute="top" secondItem="i7f-0I-S5r" secondAttribute="top" constant="20" id="ttx-h8-Hoj"/>
                                     <constraint firstItem="K3y-vf-rCO" firstAttribute="top" secondItem="VIS-UN-Ubm" secondAttribute="bottom" constant="4" id="wwP-Bq-fAB"/>
                                     <constraint firstItem="2CF-4o-wkq" firstAttribute="leading" secondItem="i7f-0I-S5r" secondAttribute="leading" constant="20" id="xSi-an-TvQ"/>
+                                    <constraint firstItem="Lbh-WN-WUe" firstAttribute="leading" secondItem="i7f-0I-S5r" secondAttribute="leading" constant="16" id="xh8-PW-lIJ"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbR-Zf-f4O">
@@ -404,11 +419,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ZCa-Ns-bzy"/>
                                 </constraints>
-                                <state key="normal" title="Share">
+                                <state key="normal" title="Dismiss">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="didPressShare:" destination="oJ1-mP-amW" eventType="touchUpInside" id="3Y5-FB-nhb"/>
+                                    <action selector="dismissView:" destination="oJ1-mP-amW" eventType="touchUpInside" id="ZSv-sJ-VCE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -417,6 +432,7 @@
                             <constraint firstItem="EbR-Zf-f4O" firstAttribute="top" secondItem="i7f-0I-S5r" secondAttribute="bottom" constant="8" id="B2L-oH-H1e"/>
                             <constraint firstItem="EbR-Zf-f4O" firstAttribute="leading" secondItem="psZ-mF-Oih" secondAttribute="leading" constant="16" id="J4u-Lx-9xK"/>
                             <constraint firstItem="psZ-mF-Oih" firstAttribute="trailing" secondItem="EbR-Zf-f4O" secondAttribute="trailing" constant="16" id="Jjq-UY-iCb"/>
+                            <constraint firstItem="EbR-Zf-f4O" firstAttribute="top" secondItem="Lbh-WN-WUe" secondAttribute="bottom" constant="8" id="hso-ZP-LAr"/>
                             <constraint firstItem="i7f-0I-S5r" firstAttribute="trailing" secondItem="psZ-mF-Oih" secondAttribute="trailing" id="n36-VX-bnP"/>
                             <constraint firstItem="i7f-0I-S5r" firstAttribute="leading" secondItem="psZ-mF-Oih" secondAttribute="leading" id="qRA-0t-r1M"/>
                             <constraint firstItem="psZ-mF-Oih" firstAttribute="bottom" secondItem="EbR-Zf-f4O" secondAttribute="bottom" constant="16" id="yWo-mX-z3f"/>
@@ -438,12 +454,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="002-girl-2" width="164.57142639160156" height="164.57142639160156"/>
-        <image name="003-girl-3" width="164.57142639160156" height="164.57142639160156"/>
-        <image name="004-student" width="418.90908813476562" height="418.90908813476562"/>
-        <image name="005-man" width="158.89654541015625" height="158.89654541015625"/>
-        <image name="006-girl" width="164.57142639160156" height="164.57142639160156"/>
-        <image name="007-boy" width="384" height="384"/>
-        <image name="information" width="400.69564819335938" height="400.69564819335938"/>
+        <image name="002-girl-2" width="64" height="64"/>
+        <image name="003-girl-3" width="64" height="64"/>
+        <image name="004-student" width="64" height="64"/>
+        <image name="005-man" width="64" height="64"/>
+        <image name="006-girl" width="64" height="64"/>
+        <image name="007-boy" width="64" height="64"/>
+        <image name="information" width="128" height="128"/>
     </resources>
 </document>

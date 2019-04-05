@@ -41,11 +41,18 @@ class FullProfileViewController: UIViewController {
         let image = screenShotMethod()
         
         // TODO: Create a `UIActivityViewController`, pass it `image` in an array and present it.
-        
+		
     }
-    
+
+
+	@IBAction func dismissView(_ sender: Any) {
+		// TODO: dismiss the current view controller
+
+		// TODO: send a notification to create a new profile
+	}
 }
 
+// TODO: create an extension to the Notification.Name and add the new notification name
 
 extension FullProfileViewController {
     
