@@ -23,6 +23,8 @@ class BasicInformationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+		// TODO: observe the notification and pop to root view controller
     }
 
     override func didReceiveMemoryWarning() {
